@@ -138,6 +138,28 @@ def edit_playlist(name: str, new_description: str) -> str:
     except Exception as e:
         return f"Error editando playlist: {str(e)}"
 
+def delete_playlist(name: str) -> str:
+    """
+    Elimina una playlist del catálogo interno del agente.
+    Permite al usuario gestionar su colección musical removiendo playlists que ya no desea.
+    """
+    try:
+        with open('playlists.json', 'r', encoding='utf-8') as f:
+            playlists = json.load(f)
+        
+        if name in playlists:
+            deleted_description = playlists[name]
+            del playlists[name]
+            
+            with open('playlists.json', 'w', encoding='utf-8') as f:
+                json.dump(playlists, f, ensure_ascii=False, indent=2)
+            
+            return f"Playlist '{name}' eliminada exitosamente: {deleted_description}"
+        else:
+            return f"Playlist '{name}' no encontrada"
+    except Exception as e:
+        return f"Error eliminando playlist: {str(e)}"
+
 # =============================================================================
 # HERRAMIENTAS DE MEMORIA
 # =============================================================================
@@ -215,6 +237,7 @@ def create_music_agent():
         list_playlists,
         add_playlist,
         edit_playlist,
+        delete_playlist,
         save_context,
         get_previous_context
     ]
