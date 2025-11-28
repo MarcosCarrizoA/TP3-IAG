@@ -1,0 +1,243 @@
+[
+  {
+    "id": "kb_001",
+    "text": "La música lo-fi y ambient es ideal para concentración y estudio porque tiene ritmos constantes, bajo contenido lírico y frecuencias que promueven el enfoque mental. Estos géneros mantienen un BPM bajo (60-90) que no distrae pero mantiene el cerebro activo.",
+    "metadata": {
+      "genero": "lo-fi, ambient",
+      "actividad": ["estudio", "trabajo", "concentración", "programación"],
+      "mood": ["tranquilo", "enfocado", "relajado", "concentrado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde", "noche"],
+      "tags": ["sin letra", "instrumental", "bpm bajo", "background music"]
+    }
+  },
+  {
+    "id": "kb_002",
+    "text": "El pop y funk son perfectos para actividades físicas y sociales porque tienen ritmos elevados (120-140 BPM), melodías pegadizas y energía alta que aumenta la motivación. Estos géneros son ideales para entrenamiento, fiestas y momentos sociales.",
+    "metadata": {
+      "genero": "pop, funk",
+      "actividad": ["entrenamiento", "fiesta", "previa", "social", "ejercicio"],
+      "mood": ["feliz", "energético", "motivado", "sociable"],
+      "condiciones_ambientales": ["soleado", "despejado"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["alto bpm", "energético", "danceable", "upbeat"]
+    }
+  },
+  {
+    "id": "kb_003",
+    "text": "En días lluviosos y fríos, la música indie suave y melancólica complementa el estado de ánimo introspectivo, creando un ambiente de reflexión y calma. Este tipo de música tiene un tempo lento y letras emotivas que resuenan con el clima.",
+    "metadata": {
+      "genero": "indie, suave",
+      "actividad": ["relajación", "reflexión", "descanso", "meditación"],
+      "mood": ["triste", "melancólico", "introspectivo", "bajón"],
+      "condiciones_ambientales": ["lluvia", "nublado", "frío"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["bpm bajo", "atmosférico", "emocional", "contemplativo"]
+    }
+  },
+  {
+    "id": "kb_004",
+    "text": "El jazz y chill son excelentes para relajarse al final del día, especialmente en las tardes y noches. Tienen armonías complejas que calman la mente y ayudan en la transición del trabajo al descanso.",
+    "metadata": {
+      "genero": "jazz, chill",
+      "actividad": ["relajación", "descanso", "transición"],
+      "mood": ["tranquilo", "relajado", "calmado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["instrumental", "suave", "armonioso", "smooth"]
+    }
+  },
+  {
+    "id": "kb_005",
+    "text": "La música de piano relajante es perfecta para estados melancólicos y momentos de introspección. Las melodías de piano tienen un efecto terapéutico que ayuda a procesar emociones y encontrar calma interior.",
+    "metadata": {
+      "genero": "piano, clásica suave",
+      "actividad": ["meditación", "reflexión", "descanso"],
+      "mood": ["melancólico", "triste", "introspectivo", "emocional"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["instrumental", "piano", "terapéutico", "emocional"]
+    }
+  },
+  {
+    "id": "kb_006",
+    "text": "El electropop y música motivacional son ideales para arrancar el día con energía, especialmente en las mañanas. Estos géneros tienen ritmos que activan el sistema nervioso y aumentan la productividad matutina.",
+    "metadata": {
+      "genero": "electropop, synthpop",
+      "actividad": ["mañana", "productividad", "activación"],
+      "mood": ["energético", "motivado", "positivo"],
+      "condiciones_ambientales": ["soleado", "despejado"],
+      "tiempo_dia": ["mañana"],
+      "tags": ["alto bpm", "sintético", "motivacional", "energético"]
+    }
+  },
+  {
+    "id": "kb_007",
+    "text": "Para entrenamiento intenso y actividades físicas exigentes, la música con ritmos altos (130-160 BPM) y energía constante es esencial. Géneros como EDM, rock y hip-hop motivacional mantienen el ritmo cardíaco elevado y la motivación alta.",
+    "metadata": {
+      "genero": "EDM, rock, hip-hop",
+      "actividad": ["entrenamiento", "ejercicio", "running", "gym"],
+      "mood": ["energético", "motivado", "intenso"],
+      "condiciones_ambientales": ["soleado", "despejado"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["muy alto bpm", "intenso", "motivacional", "power"]
+    }
+  },
+  {
+    "id": "kb_008",
+    "text": "Los viernes por la noche representan una transición del trabajo al ocio. La música social y energética ayuda a cambiar el estado mental, preparando para actividades sociales y relajación después de la semana laboral.",
+    "metadata": {
+      "genero": "pop, dance, funk",
+      "actividad": ["previa", "social", "transición trabajo-ocio"],
+      "mood": ["feliz", "sociable", "relajado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["noche"],
+      "tags": ["social", "danceable", "festivo", "transición"]
+    }
+  },
+  {
+    "id": "kb_009",
+    "text": "Los lunes por la mañana requieren música que active pero no sobreestimule. Música con ritmo moderado que motive sin agotar, ideal para comenzar la semana con energía controlada y enfoque.",
+    "metadata": {
+      "genero": "indie pop, soft rock",
+      "actividad": ["trabajo", "productividad", "inicio semana"],
+      "mood": ["motivado", "enfocado", "equilibrado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana"],
+      "tags": ["moderado", "motivacional", "equilibrado", "productivo"]
+    }
+  },
+  {
+    "id": "kb_010",
+    "text": "Los domingos por la tarde tienen un carácter especial de reflexión y descanso. La música suave y contemplativa complementa este momento de introspección y preparación para la nueva semana.",
+    "metadata": {
+      "genero": "indie, folk suave, chill",
+      "actividad": ["descanso", "reflexión", "preparación"],
+      "mood": ["tranquilo", "contemplativo", "relajado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde"],
+      "tags": ["contemplativo", "suave", "reflexivo", "dominical"]
+    }
+  },
+  {
+    "id": "kb_011",
+    "text": "En climas soleados y cálidos, la música energética y alegre resuena con el ambiente. El sol aumenta los niveles de serotonina, por lo que música con ritmos altos y melodías positivas potencia este estado natural.",
+    "metadata": {
+      "genero": "pop, reggae, tropical",
+      "actividad": ["social", "exterior", "actividades al aire libre"],
+      "mood": ["feliz", "alegre", "positivo"],
+      "condiciones_ambientales": ["soleado", "cálido"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["alegre", "tropical", "positivo", "exterior"]
+    }
+  },
+  {
+    "id": "kb_012",
+    "text": "Para estudiar durante varias horas seguidas, es importante variar entre diferentes tipos de música tranquila para evitar la monotonía. Alternar entre lo-fi, piano y ambient mantiene la concentración sin aburrir.",
+    "metadata": {
+      "genero": "lo-fi, piano, ambient",
+      "actividad": ["estudio prolongado", "trabajo extenso"],
+      "mood": ["enfocado", "persistente"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde", "noche"],
+      "tags": ["variedad", "prolongado", "sin distracción", "consistente"]
+    }
+  },
+  {
+    "id": "kb_013",
+    "text": "Cuando alguien está enojado pero quiere relajarse, la música instrumental suave con progresiones lentas ayuda a bajar la intensidad emocional. El piano y la música clásica moderna son especialmente efectivos para este propósito.",
+    "metadata": {
+      "genero": "piano, clásica moderna, instrumental",
+      "actividad": ["relajación", "control emocional", "meditación"],
+      "mood": ["enojado pero buscando calma", "intenso pero relajante"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["terapéutico", "calmante", "instrumental", "progresivo"]
+    }
+  },
+  {
+    "id": "kb_014",
+    "text": "La música para programar y trabajo técnico debe ser principalmente instrumental, con ritmos constantes que no interrumpan el flujo de pensamiento. Lo-fi hip-hop y ambient techno son géneros especialmente diseñados para este propósito.",
+    "metadata": {
+      "genero": "lo-fi hip-hop, ambient techno",
+      "actividad": ["programación", "trabajo técnico", "análisis"],
+      "mood": ["enfocado", "analítico", "concentrado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde", "noche"],
+      "tags": ["sin letra", "ritmo constante", "flujo", "técnico"]
+    }
+  },
+  {
+    "id": "kb_015",
+    "text": "En las noches, especialmente después de un día largo, la música debe facilitar la transición al descanso. Jazz suave, chill y música ambiental crean un ambiente que ayuda a desconectar y preparar para el sueño o relajación profunda.",
+    "metadata": {
+      "genero": "jazz suave, chill, ambient",
+      "actividad": ["descanso", "transición", "preparación para dormir"],
+      "mood": ["cansado", "relajado", "tranquilo"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["noche"],
+      "tags": ["transición", "descanso", "suave", "nocturno"]
+    }
+  },
+  {
+    "id": "kb_016",
+    "text": "Para momentos de alta energía y motivación, como antes de una presentación o competencia, la música con ritmos altos y letras inspiradoras aumenta la confianza y el estado de alerta. Rock motivacional y hip-hop inspiracional son ideales.",
+    "metadata": {
+      "genero": "rock motivacional, hip-hop inspiracional",
+      "actividad": ["preparación", "motivación", "confianza"],
+      "mood": ["motivado", "confiado", "energético"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["inspiracional", "confianza", "alto bpm", "motivacional"]
+    }
+  },
+  {
+    "id": "kb_017",
+    "text": "La música para meditación y mindfulness debe tener frecuencias que promuevan estados de calma profunda. Sonidos naturales, música drone y ambient minimalista ayudan a alcanzar estados meditativos y de atención plena.",
+    "metadata": {
+      "genero": "ambient minimalista, drone, sonidos naturales",
+      "actividad": ["meditación", "mindfulness", "yoga"],
+      "mood": ["calmado", "presente", "consciente"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["meditativo", "minimalista", "frecuencias", "consciente"]
+    }
+  },
+  {
+    "id": "kb_018",
+    "text": "Cuando hay niebla o condiciones atmosféricas densas, la música atmosférica y etérea complementa el ambiente. Post-rock, shoegaze y ambient crean una sensación de inmersión que resuena con la naturaleza del clima.",
+    "metadata": {
+      "genero": "post-rock, shoegaze, ambient",
+      "actividad": ["contemplación", "reflexión", "inmersión"],
+      "mood": ["introspectivo", "contemplativo", "melancólico"],
+      "condiciones_ambientales": ["niebla", "nublado", "atmosférico"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["atmosférico", "etéreo", "inmersivo", "denso"]
+    }
+  },
+  {
+    "id": "kb_019",
+    "text": "Para actividades creativas como escribir o diseñar, la música debe inspirar sin distraer. Indie alternativo, folk moderno y música con letras poéticas pero no demasiado prominentes estimulan la creatividad sin interrumpir el proceso.",
+    "metadata": {
+      "genero": "indie alternativo, folk moderno",
+      "actividad": ["creatividad", "escritura", "diseño"],
+      "mood": ["creativo", "inspirado", "artístico"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["inspirador", "artístico", "poético", "creativo"]
+    }
+  },
+  {
+    "id": "kb_020",
+    "text": "En días festivos y celebraciones, la música debe reflejar el espíritu de alegría compartida. Salsa, reggaeton, pop dance y música latina crean un ambiente festivo que une a las personas y aumenta la energía del grupo.",
+    "metadata": {
+      "genero": "salsa, reggaeton, pop dance, latina",
+      "actividad": ["celebración", "fiesta", "reunión social"],
+      "mood": ["feliz", "celebratorio", "sociable"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["festivo", "danceable", "social", "celebratorio"]
+    }
+  }
+]
+
