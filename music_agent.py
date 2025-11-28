@@ -418,6 +418,7 @@ def create_music_agent():
     tools = [
         get_location_and_weather,
         get_time_context,
+        get_context_insights,
         list_playlists,
         add_playlist,
         edit_playlist,
@@ -467,26 +468,11 @@ def main():
                 continue
             
             try:
-                print("\n🤔 Analizando contexto ambiental con agente especializado...")
-                
-                # Consultar agente especializado primero
-                context_insights = get_context_insights(user_input)
-                
-                print("🔍 Consultando memoria semántica y base de conocimiento...")
-                
-                # Construir prompt enriquecido con insights del agente especializado
-                enriched_prompt = f"""{user_input}
-
-INFORMACIÓN DE CONTEXTO AMBIENTAL (del agente especializado):
-{context_insights}
-
-Usa esta información contextual profunda junto con la búsqueda en memoria semántica y base de conocimiento musical para hacer una recomendación más precisa y bien justificada."""
-
-                # Incluir system message en los mensajes
+                # Pasar el mensaje directamente al agente, él decidirá qué herramientas usar
                 from langchain_core.messages import HumanMessage
                 messages = [
                     SystemMessage(content=agent._system_prompt),
-                    HumanMessage(content=enriched_prompt)
+                    HumanMessage(content=user_input)
                 ]
                 
                 response = agent.invoke(

@@ -58,6 +58,7 @@ def analyze_context(user_query: str = "") -> str:
     Returns:
         Insights sobre el contexto ambiental y su relación con la música
     """
+    print(f"🎶 Analizando contexto ambiental con agente especializado: {user_query}")
     agent = create_context_analyzer_agent()
     
     # Construir el prompt para el agente especializado
