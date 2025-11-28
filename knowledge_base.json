@@ -238,6 +238,942 @@
       "tiempo_dia": ["tarde", "noche"],
       "tags": ["festivo", "danceable", "social", "celebratorio"]
     }
+  },
+  {
+    "id": "kb_021",
+    "text": "El ambient oscuro y sonidos continuos son ideales para concentración profunda y trabajo intenso. Estos sonidos crean un ambiente inmersivo que bloquea distracciones externas y mantiene el foco en tareas complejas durante largos períodos.",
+    "metadata": {
+      "genero": "ambient oscuro, drone, sonidos continuos",
+      "actividad": ["trabajo profundo", "concentración intensa", "análisis complejo"],
+      "mood": ["enfocado", "inmersivo", "concentrado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde", "noche"],
+      "tags": ["oscuro", "continuo", "inmersivo", "profundo"]
+    }
+  },
+  {
+    "id": "kb_022",
+    "text": "El lo-fi moderno para programar combina beats suaves con elementos electrónicos sutiles que mantienen el flujo de código sin interrupciones. Es perfecto para sesiones largas de desarrollo donde se necesita ritmo constante pero no distracción.",
+    "metadata": {
+      "genero": "lo-fi moderno, beats electrónicos",
+      "actividad": ["programación", "desarrollo", "coding"],
+      "mood": ["enfocado", "productivo", "fluido"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde", "noche"],
+      "tags": ["moderno", "beats", "sin distracción", "flujo"]
+    }
+  },
+  {
+    "id": "kb_023",
+    "text": "Para sesiones de estudio prolongadas, la música instrumental de larga duración mantiene la concentración sin cambios abruptos que interrumpan el flujo de aprendizaje. Ideal para maratones de estudio donde se necesita consistencia sonora.",
+    "metadata": {
+      "genero": "instrumental prolongado, ambient extendido",
+      "actividad": ["estudio prolongado", "maratón de estudio", "sesión larga"],
+      "mood": ["persistente", "enfocado", "determinado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde", "noche"],
+      "tags": ["prolongado", "consistente", "sin interrupciones", "extendido"]
+    }
+  },
+  {
+    "id": "kb_024",
+    "text": "El indie acústico para tardes lluviosas crea una atmósfera íntima y contemplativa. Las guitarras acústicas y voces suaves resuenan perfectamente con el sonido de la lluvia, generando un ambiente de calma y reflexión.",
+    "metadata": {
+      "genero": "indie acústico, folk suave",
+      "actividad": ["relajación", "reflexión", "café tranquilo"],
+      "mood": ["tranquilo", "contemplativo", "melancólico"],
+      "condiciones_ambientales": ["lluvia", "nublado", "frío"],
+      "tiempo_dia": ["tarde"],
+      "tags": ["acústico", "íntimo", "contemplativo", "café"]
+    }
+  },
+  {
+    "id": "kb_025",
+    "text": "El chill suave para domingos relajados ayuda a resetear la mente después de una semana intensa. Esta música facilita la transición hacia un estado de calma y preparación mental para la nueva semana, sin sobreestimulación.",
+    "metadata": {
+      "genero": "chill suave, ambient relajante",
+      "actividad": ["descanso", "reset mental", "preparación"],
+      "mood": ["tranquilo", "relajado", "renovado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde"],
+      "tags": ["suave", "reset", "renovación", "dominical"]
+    }
+  },
+  {
+    "id": "kb_026",
+    "text": "La electrónica intensa con beats potentes es esencial para entrenamientos de alta intensidad. Estos ritmos elevados (140-160 BPM) sincronizan con el ritmo cardíaco durante ejercicios de fuerza y potencia, maximizando el rendimiento físico.",
+    "metadata": {
+      "genero": "electrónica intensa, beats potentes, EDM",
+      "actividad": ["entrenamiento intenso", "fuerza", "potencia"],
+      "mood": ["energético", "intenso", "poderoso"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["intenso", "potente", "alto bpm", "fuerza"]
+    }
+  },
+  {
+    "id": "kb_027",
+    "text": "El EDM motivacional para cardio mantiene un ritmo constante y elevado que ayuda a mantener el paso durante actividades aeróbicas. Los drops y builds crean momentos de impulso que aumentan la resistencia y motivación durante el ejercicio.",
+    "metadata": {
+      "genero": "EDM motivacional, progressive house",
+      "actividad": ["cardio", "running", "aeróbico"],
+      "mood": ["motivado", "energético", "resistente"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["motivacional", "cardio", "resistencia", "progresivo"]
+    }
+  },
+  {
+    "id": "kb_028",
+    "text": "El pop rítmico para correr al aire libre tiene un tempo que se sincroniza naturalmente con la zancada. Las melodías pegadizas y el ritmo constante (120-130 BPM) ayudan a mantener un paso constante y disfrutar del ejercicio al aire libre.",
+    "metadata": {
+      "genero": "pop rítmico, indie pop",
+      "actividad": ["running", "correr", "aire libre"],
+      "mood": ["energético", "alegre", "activo"],
+      "condiciones_ambientales": ["soleado", "despejado"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["rítmico", "sincronizado", "alegre", "exterior"]
+    }
+  },
+  {
+    "id": "kb_029",
+    "text": "El techno y trap agresivo para entrenamiento intenso proporciona la energía cruda necesaria para sesiones de alta intensidad. Los ritmos duros y los bajos profundos aumentan la agresividad controlada necesaria para entrenamientos extremos.",
+    "metadata": {
+      "genero": "techno, trap agresivo, hardstyle",
+      "actividad": ["entrenamiento extremo", "gym intenso", "alta intensidad"],
+      "mood": ["agresivo", "intenso", "poderoso"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["agresivo", "duro", "extremo", "intenso"]
+    }
+  },
+  {
+    "id": "kb_030",
+    "text": "El ambient relajante para estiramientos post-ejercicio ayuda a bajar la frecuencia cardíaca y relajar los músculos. La música suave facilita la transición del ejercicio intenso a la recuperación, promoviendo la relajación física y mental.",
+    "metadata": {
+      "genero": "ambient relajante, chill suave",
+      "actividad": ["estiramiento", "cooldown", "recuperación"],
+      "mood": ["relajado", "calmado", "recuperado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde", "noche"],
+      "tags": ["relajante", "recuperación", "suave", "cooldown"]
+    }
+  },
+  {
+    "id": "kb_031",
+    "text": "El synthwave y chill nocturno para manejar de noche crea una atmósfera futurista y relajada. Los sintetizadores suaves y los beats retro proporcionan un ambiente perfecto para conducir de noche, manteniendo la alerta sin sobreestimulación.",
+    "metadata": {
+      "genero": "synthwave, chill nocturno, retro wave",
+      "actividad": ["conducir", "manejar", "viaje nocturno"],
+      "mood": ["relajado", "alertado", "nostálgico"],
+      "condiciones_ambientales": ["noche", "oscuro"],
+      "tiempo_dia": ["noche"],
+      "tags": ["nocturno", "futurista", "retro", "conducción"]
+    }
+  },
+  {
+    "id": "kb_032",
+    "text": "La electrónica suave estilo urbano nocturno combina elementos modernos con ambientes relajados. Perfecta para momentos nocturnos en la ciudad, crea una atmósfera sofisticada que complementa el ambiente urbano sin ser invasiva.",
+    "metadata": {
+      "genero": "electrónica suave, urban chill",
+      "actividad": ["relajación nocturna", "ambiente urbano"],
+      "mood": ["relajado", "sofisticado", "moderno"],
+      "condiciones_ambientales": ["noche"],
+      "tiempo_dia": ["noche"],
+      "tags": ["urbano", "sofisticado", "moderno", "nocturno"]
+    }
+  },
+  {
+    "id": "kb_033",
+    "text": "El dream pop y synth para noche tranquila crea una atmósfera etérea y onírica. Los sonidos flotantes y las texturas suaves son ideales para momentos de relajación nocturna donde se busca un ambiente mágico y contemplativo.",
+    "metadata": {
+      "genero": "dream pop, synth, etéreo",
+      "actividad": ["relajación", "contemplación", "descanso"],
+      "mood": ["tranquilo", "onírico", "contemplativo"],
+      "condiciones_ambientales": ["noche"],
+      "tiempo_dia": ["noche"],
+      "tags": ["etéreo", "onírico", "mágico", "flotante"]
+    }
+  },
+  {
+    "id": "kb_034",
+    "text": "El jazz suave para momentos nocturnos relajados tiene un carácter íntimo y sofisticado. Las improvisaciones suaves y los ritmos pausados crean un ambiente perfecto para conversaciones tranquilas o momentos de introspección nocturna.",
+    "metadata": {
+      "genero": "jazz suave, smooth jazz",
+      "actividad": ["relajación", "conversación", "introspección"],
+      "mood": ["tranquilo", "sofisticado", "íntimo"],
+      "condiciones_ambientales": ["noche"],
+      "tiempo_dia": ["noche"],
+      "tags": ["sofisticado", "íntimo", "suave", "nocturno"]
+    }
+  },
+  {
+    "id": "kb_035",
+    "text": "Los hits bailables para iniciar una fiesta tienen energía alta desde el primer momento. Estas canciones conocidas y pegadizas crean un ambiente festivo inmediato, rompiendo el hielo y generando energía colectiva desde el inicio.",
+    "metadata": {
+      "genero": "hits bailables, pop dance",
+      "actividad": ["fiesta", "inicio de fiesta", "romper hielo"],
+      "mood": ["feliz", "energético", "sociable"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["noche"],
+      "tags": ["bailable", "conocido", "energético", "festivo"]
+    }
+  },
+  {
+    "id": "kb_036",
+    "text": "Los clásicos disco y funk retro tienen un ritmo irresistible que invita al baile. La música de los 70s y 80s crea un ambiente nostálgico y alegre, perfecto para fiestas donde se busca un ambiente retro y divertido.",
+    "metadata": {
+      "genero": "disco, funk retro, clásicos",
+      "actividad": ["fiesta", "baile", "celebración"],
+      "mood": ["feliz", "nostálgico", "alegre"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["noche"],
+      "tags": ["retro", "nostálgico", "bailable", "divertido"]
+    }
+  },
+  {
+    "id": "kb_037",
+    "text": "El reggaetón y hits latinos para bailar tienen ritmos contagiosos que generan energía en la pista. Estos géneros crean un ambiente festivo y social, perfecto para fiestas donde se busca movimiento constante y ambiente latino.",
+    "metadata": {
+      "genero": "reggaetón, hits latinos, urbano latino",
+      "actividad": ["fiesta", "baile", "social"],
+      "mood": ["feliz", "energético", "sociable"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["noche"],
+      "tags": ["latino", "bailable", "contagioso", "festivo"]
+    }
+  },
+  {
+    "id": "kb_038",
+    "text": "El house y techno para fiesta electrónica mantienen un ritmo constante y elevado que mantiene a la gente bailando. Estos géneros crean un ambiente inmersivo y energético, perfecto para fiestas donde la música es el centro de atención.",
+    "metadata": {
+      "genero": "house, techno, electrónica",
+      "actividad": ["fiesta electrónica", "baile", "club"],
+      "mood": ["energético", "inmersivo", "intenso"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["noche"],
+      "tags": ["electrónico", "constante", "inmersivo", "club"]
+    }
+  },
+  {
+    "id": "kb_039",
+    "text": "La música veraniega para fiestas al aire libre tiene un carácter alegre y despreocupado. Los ritmos tropicales y las melodías soleadas crean un ambiente perfecto para fiestas en exteriores, playas o espacios abiertos durante el verano.",
+    "metadata": {
+      "genero": "tropical, veraniego, pop alegre",
+      "actividad": ["fiesta exterior", "playa", "aire libre"],
+      "mood": ["feliz", "alegre", "despreocupado"],
+      "condiciones_ambientales": ["soleado", "cálido"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["veraniego", "tropical", "exterior", "soleado"]
+    }
+  },
+  {
+    "id": "kb_040",
+    "text": "El indie chill para atardeceres relajantes combina melodías suaves con ambientes contemplativos. Perfecto para momentos de transición del día a la noche, crea un ambiente de calma y reflexión que complementa la belleza del atardecer.",
+    "metadata": {
+      "genero": "indie chill, dream pop",
+      "actividad": ["relajación", "contemplación", "atardecer"],
+      "mood": ["tranquilo", "contemplativo", "relajado"],
+      "condiciones_ambientales": ["soleado", "despejado"],
+      "tiempo_dia": ["tarde"],
+      "tags": ["chill", "contemplativo", "atardecer", "suave"]
+    }
+  },
+  {
+    "id": "kb_041",
+    "text": "El pop suave para ver el atardecer tiene un carácter romántico y contemplativo. Las melodías cálidas y los ritmos pausados crean un ambiente perfecto para disfrutar del momento dorado del día, generando sensaciones de paz y belleza.",
+    "metadata": {
+      "genero": "pop suave, balada pop",
+      "actividad": ["contemplación", "relajación", "atardecer"],
+      "mood": ["tranquilo", "romántico", "contemplativo"],
+      "condiciones_ambientales": ["soleado", "despejado"],
+      "tiempo_dia": ["tarde"],
+      "tags": ["suave", "romántico", "dorado", "atardecer"]
+    }
+  },
+  {
+    "id": "kb_042",
+    "text": "Los sonidos tropicales y relax playero transportan a un estado de calma y despreocupación. Estos sonidos crean una atmósfera de vacaciones y relajación, perfectos para momentos donde se busca escapar mentalmente a un lugar tranquilo.",
+    "metadata": {
+      "genero": "tropical, relax playero, sonidos naturales",
+      "actividad": ["relajación", "meditación", "escape mental"],
+      "mood": ["relajado", "despreocupado", "tranquilo"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde"],
+      "tags": ["tropical", "playero", "escape", "vacaciones"]
+    }
+  },
+  {
+    "id": "kb_043",
+    "text": "El pop alegre para días soleados aumenta los niveles de energía positiva. Las melodías brillantes y los ritmos optimistas resuenan con la luz del sol, creando un ambiente de felicidad y vitalidad que potencia el buen humor natural.",
+    "metadata": {
+      "genero": "pop alegre, upbeat pop",
+      "actividad": ["social", "exterior", "actividades al aire libre"],
+      "mood": ["feliz", "alegre", "optimista"],
+      "condiciones_ambientales": ["soleado", "cálido"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["alegre", "optimista", "brillante", "soleado"]
+    }
+  },
+  {
+    "id": "kb_044",
+    "text": "Las canciones tristes para introspección emocional ayudan a procesar sentimientos profundos. La música melancólica permite conectar con emociones difíciles, facilitando el proceso de comprensión y aceptación emocional.",
+    "metadata": {
+      "genero": "indie triste, balada melancólica",
+      "actividad": ["introspección", "procesamiento emocional"],
+      "mood": ["triste", "melancólico", "introspectivo"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["triste", "emocional", "procesamiento", "introspección"]
+    }
+  },
+  {
+    "id": "kb_045",
+    "text": "Las baladas para momentos de nostalgia tienen un poder emocional que conecta con recuerdos y sentimientos pasados. Estas canciones facilitan la expresión emocional y el procesamiento de pérdidas o cambios importantes en la vida.",
+    "metadata": {
+      "genero": "balada, pop emocional",
+      "actividad": ["reflexión", "procesamiento emocional"],
+      "mood": ["nostálgico", "triste", "emocional"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["nostálgico", "emocional", "balada", "recuerdos"]
+    }
+  },
+  {
+    "id": "kb_046",
+    "text": "El instrumental melancólico para estados emocionales bajos proporciona un espacio seguro para sentir sin palabras que distraigan. El piano y los instrumentos suaves crean un ambiente de contención emocional que facilita el procesamiento de sentimientos difíciles.",
+    "metadata": {
+      "genero": "piano instrumental, instrumental melancólico",
+      "actividad": ["procesamiento emocional", "reflexión"],
+      "mood": ["triste", "melancólico", "vulnerable"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["instrumental", "melancólico", "contención", "emocional"]
+    }
+  },
+  {
+    "id": "kb_047",
+    "text": "La música calma para procesar emociones ayuda a regular estados emocionales intensos. Los sonidos suaves y las progresiones lentas facilitan la transición de estados emocionales difíciles hacia la calma y el equilibrio mental.",
+    "metadata": {
+      "genero": "ambient calmante, música terapéutica",
+      "actividad": ["regulación emocional", "calma"],
+      "mood": ["intenso pero buscando calma", "emocional"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["terapéutico", "regulación", "calma", "equilibrio"]
+    }
+  },
+  {
+    "id": "kb_048",
+    "text": "La música inspiradora para tareas creativas estimula la imaginación sin distraer del proceso creativo. Los sonidos etéreos y las texturas musicales complejas abren canales de creatividad, facilitando el flujo de ideas y la expresión artística.",
+    "metadata": {
+      "genero": "música inspiradora, etéreo, experimental",
+      "actividad": ["creatividad", "arte", "inspiración"],
+      "mood": ["creativo", "inspirado", "artístico"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["inspirador", "etéreo", "creativo", "artístico"]
+    }
+  },
+  {
+    "id": "kb_049",
+    "text": "El lo-fi chill para pintar y diseñar mantiene un ambiente relajado que permite fluir en el proceso creativo. Los beats suaves y las texturas musicales sutiles no compiten con la atención visual, facilitando la concentración en tareas artísticas.",
+    "metadata": {
+      "genero": "lo-fi chill, beats suaves",
+      "actividad": ["pintar", "diseñar", "arte visual"],
+      "mood": ["creativo", "relajado", "fluido"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["chill", "artístico", "fluido", "visual"]
+    }
+  },
+  {
+    "id": "kb_050",
+    "text": "Los beats suaves para estimular ideas proporcionan un ritmo sutil que activa el pensamiento sin interrumpir el proceso de generación de ideas. Estos sonidos crean un ambiente de lluvia de ideas donde las conexiones creativas fluyen naturalmente.",
+    "metadata": {
+      "genero": "beats suaves, instrumental hip-hop",
+      "actividad": ["lluvia de ideas", "brainstorming", "creatividad"],
+      "mood": ["creativo", "inspirado", "fluido"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["beats", "ideas", "fluido", "brainstorming"]
+    }
+  },
+  {
+    "id": "kb_051",
+    "text": "Los sonidos etéreos para estimular la creatividad abren espacios mentales para la exploración artística. Las texturas musicales complejas y los ambientes sonoros crean un entorno donde las ideas innovadoras pueden emerger y desarrollarse libremente.",
+    "metadata": {
+      "genero": "etéreo, experimental, ambient",
+      "actividad": ["creatividad", "exploración", "innovación"],
+      "mood": ["creativo", "explorador", "innovador"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["etéreo", "experimental", "innovador", "explorador"]
+    }
+  },
+  {
+    "id": "kb_052",
+    "text": "El lo-fi con sonido de lluvia para concentración combina música relajante con el efecto calmante del agua. El sonido de lluvia enmascara distracciones ambientales mientras la música mantiene el cerebro activo, creando un ambiente perfecto para el enfoque profundo.",
+    "metadata": {
+      "genero": "lo-fi, sonidos de lluvia",
+      "actividad": ["concentración", "estudio", "trabajo"],
+      "mood": ["enfocado", "tranquilo", "concentrado"],
+      "condiciones_ambientales": ["lluvia", "nublado"],
+      "tiempo_dia": ["mañana", "tarde", "noche"],
+      "tags": ["lluvia", "enfoque", "calmante", "concentración"]
+    }
+  },
+  {
+    "id": "kb_053",
+    "text": "El ambient oscuro para tormentas intensas complementa la energía dramática del clima. Los sonidos profundos y atmosféricos resuenan con la intensidad de la tormenta, creando un ambiente inmersivo que potencia la experiencia sensorial del clima extremo.",
+    "metadata": {
+      "genero": "ambient oscuro, drone, atmosférico",
+      "actividad": ["contemplación", "inmersión", "reflexión"],
+      "mood": ["intenso", "dramático", "contemplativo"],
+      "condiciones_ambientales": ["tormenta", "lluvia intensa"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["oscuro", "dramático", "tormenta", "intenso"]
+    }
+  },
+  {
+    "id": "kb_054",
+    "text": "El instrumental suave para mañanas nubladas crea un ambiente contemplativo que complementa la calma del clima. La música suave ayuda a mantener un estado de calma y reflexión durante mañanas donde el clima invita a la introspección.",
+    "metadata": {
+      "genero": "instrumental suave, ambient",
+      "actividad": ["reflexión", "contemplación", "calma"],
+      "mood": ["tranquilo", "contemplativo", "calmado"],
+      "condiciones_ambientales": ["nublado", "niebla"],
+      "tiempo_dia": ["mañana"],
+      "tags": ["suave", "contemplativo", "nublado", "calma"]
+    }
+  },
+  {
+    "id": "kb_055",
+    "text": "La música motivacional suave para comenzar el día activa la mente sin sobreestimular. Estos sonidos proporcionan energía controlada que facilita la transición del sueño a la productividad, ideal para comenzar el día con enfoque y determinación.",
+    "metadata": {
+      "genero": "motivacional suave, pop suave",
+      "actividad": ["inicio del día", "productividad", "activación"],
+      "mood": ["motivado", "enfocado", "equilibrado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana"],
+      "tags": ["motivacional", "suave", "productivo", "inicio"]
+    }
+  },
+  {
+    "id": "kb_056",
+    "text": "La energía ligera para primeras horas del día proporciona activación gradual del sistema. Esta música ayuda a despertar suavemente, facilitando la transición del estado de sueño a la alerta sin choques abruptos de energía.",
+    "metadata": {
+      "genero": "energía ligera, pop suave, indie pop",
+      "actividad": ["despertar", "primeras horas", "activación gradual"],
+      "mood": ["despierto", "ligero", "alertado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana"],
+      "tags": ["ligero", "gradual", "despertar", "suave"]
+    }
+  },
+  {
+    "id": "kb_057",
+    "text": "El pop alegre para despertar con buen humor establece un tono positivo desde el inicio del día. Las melodías brillantes y los ritmos optimistas activan los sistemas de recompensa del cerebro, generando un estado de ánimo positivo que se mantiene durante el día.",
+    "metadata": {
+      "genero": "pop alegre, upbeat pop",
+      "actividad": ["despertar", "inicio positivo", "buen humor"],
+      "mood": ["feliz", "optimista", "positivo"],
+      "condiciones_ambientales": ["soleado", "despejado"],
+      "tiempo_dia": ["mañana"],
+      "tags": ["alegre", "positivo", "despertar", "optimista"]
+    }
+  },
+  {
+    "id": "kb_058",
+    "text": "El rock y pop clásico para viajes largos proporciona energía constante sin agotar. Las canciones conocidas y los ritmos variados mantienen el interés durante trayectos prolongados, creando un ambiente de nostalgia y disfrute durante el viaje.",
+    "metadata": {
+      "genero": "rock clásico, pop clásico",
+      "actividad": ["viaje largo", "conducir", "road trip"],
+      "mood": ["energético", "nostálgico", "disfrutando"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["clásico", "nostálgico", "viaje", "energético"]
+    }
+  },
+  {
+    "id": "kb_059",
+    "text": "El indie y folk para rutas largas crea un ambiente contemplativo y relajado. Las melodías suaves y las letras poéticas acompañan perfectamente los paisajes cambiantes, facilitando la reflexión y el disfrute del viaje sin sobreestimulación.",
+    "metadata": {
+      "genero": "indie, folk, acústico",
+      "actividad": ["viaje largo", "conducir", "contemplación"],
+      "mood": ["contemplativo", "relajado", "reflexivo"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["contemplativo", "poético", "relajado", "viaje"]
+    }
+  },
+  {
+    "id": "kb_060",
+    "text": "El chill roadtrip para conducir relajado mantiene un ambiente tranquilo sin adormecer. La música suave y los ritmos constantes facilitan la conducción relajada, creando un ambiente de calma que reduce el estrés del viaje sin comprometer la alerta.",
+    "metadata": {
+      "genero": "chill, ambient suave",
+      "actividad": ["conducir", "viaje relajado"],
+      "mood": ["relajado", "tranquilo", "alertado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["chill", "relajado", "conducción", "tranquilo"]
+    }
+  },
+  {
+    "id": "kb_061",
+    "text": "Los sonidos zen para meditación y mindfulness facilitan estados de atención plena. Las frecuencias específicas y los sonidos naturales ayudan a alcanzar estados meditativos profundos, promoviendo la calma mental y la conexión con el presente.",
+    "metadata": {
+      "genero": "zen, sonidos naturales, música meditativa",
+      "actividad": ["meditación", "mindfulness", "yoga"],
+      "mood": ["calmado", "presente", "consciente"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["zen", "meditativo", "presente", "consciente"]
+    }
+  },
+  {
+    "id": "kb_062",
+    "text": "La música calmante para respiración consciente sincroniza con los ritmos naturales del cuerpo. Los sonidos suaves y las frecuencias específicas facilitan la práctica de respiración profunda, ayudando a regular el sistema nervioso y alcanzar estados de calma.",
+    "metadata": {
+      "genero": "música calmante, ambient suave",
+      "actividad": ["respiración consciente", "meditación", "relajación"],
+      "mood": ["calmado", "regulado", "presente"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["calmante", "respiración", "regulación", "presente"]
+    }
+  },
+  {
+    "id": "kb_063",
+    "text": "Los paisajes sonoros para relajación profunda transportan a entornos naturales tranquilos. Estos sonidos crean una sensación de escape y calma profunda, facilitando la desconexión del estrés diario y la conexión con estados de paz interior.",
+    "metadata": {
+      "genero": "paisajes sonoros, naturaleza, ambient",
+      "actividad": ["relajación profunda", "meditación", "escape"],
+      "mood": ["tranquilo", "pacifico", "relajado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["naturaleza", "paisaje sonoro", "escape", "paz"]
+    }
+  },
+  {
+    "id": "kb_064",
+    "text": "El ruido blanco para máximo enfoque bloquea distracciones auditivas externas. Este sonido constante y uniforme crea un ambiente de silencio efectivo, permitiendo concentración profunda en tareas que requieren atención sostenida sin interrupciones sonoras.",
+    "metadata": {
+      "genero": "ruido blanco, sonido constante",
+      "actividad": ["concentración máxima", "estudio intenso", "trabajo profundo"],
+      "mood": ["enfocado", "concentrado", "aislado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["ruido blanco", "enfoque", "aislamiento", "constante"]
+    }
+  },
+  {
+    "id": "kb_065",
+    "text": "El ambient minimalista para cero distracción elimina elementos musicales que puedan competir por atención. Los sonidos mínimos y las texturas sutiles crean un ambiente de silencio activo que facilita el enfoque absoluto en tareas que requieren máxima concentración.",
+    "metadata": {
+      "genero": "ambient minimalista, drone minimal",
+      "actividad": ["concentración absoluta", "trabajo profundo", "análisis"],
+      "mood": ["enfocado", "concentrado", "aislado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["minimalista", "silencioso", "absoluto", "enfoque"]
+    }
+  },
+  {
+    "id": "kb_066",
+    "text": "Los clásicos de los 80 y 90 generan nostalgia y energía positiva. Estas canciones conocidas activan recuerdos positivos y crean un ambiente de alegría nostálgica, perfecto para momentos donde se busca levantar el ánimo con música familiar.",
+    "metadata": {
+      "genero": "clásicos 80s, clásicos 90s, retro",
+      "actividad": ["nostalgia", "social", "diversión"],
+      "mood": ["nostálgico", "feliz", "alegre"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["retro", "nostálgico", "clásico", "familiar"]
+    }
+  },
+  {
+    "id": "kb_067",
+    "text": "El rock retro y nostalgia sonora transporta a épocas pasadas con energía positiva. Las guitarras clásicas y los sonidos característicos de décadas anteriores crean un ambiente de conexión con el pasado, generando sensaciones de calidez y familiaridad.",
+    "metadata": {
+      "genero": "rock retro, nostalgia sonora",
+      "actividad": ["nostalgia", "reflexión", "disfrute"],
+      "mood": ["nostálgico", "cálido", "reflexivo"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["retro", "rock", "nostálgico", "cálido"]
+    }
+  },
+  {
+    "id": "kb_068",
+    "text": "Las canciones históricas para viajar en el tiempo conectan con diferentes épocas y culturas. Esta música proporciona una experiencia de inmersión histórica, facilitando la reflexión sobre el pasado y la conexión con tradiciones musicales de diferentes períodos.",
+    "metadata": {
+      "genero": "histórico, clásico, tradicional",
+      "actividad": ["reflexión histórica", "aprendizaje", "contemplación"],
+      "mood": ["reflexivo", "contemplativo", "curioso"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["histórico", "tradicional", "reflexivo", "inmersivo"]
+    }
+  },
+  {
+    "id": "kb_069",
+    "text": "El pop latino suave para momentos tranquilos combina ritmos latinos con melodías relajadas. Esta música crea un ambiente cálido y acogedor, perfecto para momentos de relajación donde se busca un toque cultural sin energía excesiva.",
+    "metadata": {
+      "genero": "pop latino suave, latino chill",
+      "actividad": ["relajación", "social tranquilo"],
+      "mood": ["tranquilo", "cálido", "relajado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["latino", "suave", "cálido", "relajado"]
+    }
+  },
+  {
+    "id": "kb_070",
+    "text": "Las guitarras acústicas relajantes crean un ambiente íntimo y cálido. El sonido natural de las cuerdas y las melodías suaves proporcionan un espacio de calma y reflexión, perfecto para momentos de introspección o conversación tranquila.",
+    "metadata": {
+      "genero": "acústico, guitarra, folk suave",
+      "actividad": ["relajación", "conversación", "introspección"],
+      "mood": ["tranquilo", "íntimo", "cálido"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["acústico", "íntimo", "cálido", "natural"]
+    }
+  },
+  {
+    "id": "kb_071",
+    "text": "El jazz y acústico para ambiente de cafetería crea un ambiente social relajado. Esta música proporciona un fondo perfecto para conversaciones, lectura o trabajo en espacios públicos, generando una atmósfera de sofisticación y calma.",
+    "metadata": {
+      "genero": "jazz, acústico, café",
+      "actividad": ["trabajo en café", "lectura", "conversación"],
+      "mood": ["relajado", "sofisticado", "social"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["café", "sofisticado", "social", "relajado"]
+    }
+  },
+  {
+    "id": "kb_072",
+    "text": "Las canciones energéticas para levantar el ánimo activan los sistemas de recompensa del cerebro. Los ritmos altos y las melodías positivas aumentan los niveles de dopamina, generando un estado de ánimo elevado y motivación para enfrentar desafíos.",
+    "metadata": {
+      "genero": "energético, pop motivacional, rock motivacional",
+      "actividad": ["motivación", "activación", "energía"],
+      "mood": ["energético", "motivado", "positivo"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["energético", "motivacional", "positivo", "dopamina"]
+    }
+  },
+  {
+    "id": "kb_073",
+    "text": "La música inspiradora para metas y objetivos proporciona la energía mental necesaria para perseguir objetivos. Las letras motivacionales y los ritmos elevados aumentan la confianza y la determinación, facilitando la persistencia en tareas desafiantes.",
+    "metadata": {
+      "genero": "inspiracional, motivacional, rock inspiracional",
+      "actividad": ["perseguir metas", "objetivos", "desafíos"],
+      "mood": ["motivado", "determinado", "confiado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["inspiracional", "metas", "determinación", "confianza"]
+    }
+  },
+  {
+    "id": "kb_074",
+    "text": "El sonido épico para momentos de logro amplifica la sensación de victoria y éxito. La música orquestal y los sonidos grandiosos refuerzan los logros alcanzados, generando una sensación de triunfo que motiva para futuros desafíos.",
+    "metadata": {
+      "genero": "épico, orquestal, cinematográfico",
+      "actividad": ["celebración de logros", "victoria", "éxito"],
+      "mood": ["triunfante", "orgulloso", "victorioso"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["épico", "victoria", "triunfo", "grandioso"]
+    }
+  },
+  {
+    "id": "kb_075",
+    "text": "El instrumental suave para estudio nocturno mantiene la concentración sin interferir con el ritmo circadiano. La música tranquila facilita el enfoque durante horas nocturnas sin sobreestimular el sistema nervioso, ideal para sesiones de estudio tardías.",
+    "metadata": {
+      "genero": "instrumental suave, ambient nocturno",
+      "actividad": ["estudio nocturno", "trabajo nocturno"],
+      "mood": ["enfocado", "tranquilo", "alertado"],
+      "condiciones_ambientales": ["noche"],
+      "tiempo_dia": ["noche"],
+      "tags": ["nocturno", "suave", "enfoque", "tarde"]
+    }
+  },
+  {
+    "id": "kb_076",
+    "text": "El ambient oscuro para programación avanzada crea un ambiente inmersivo que facilita el flujo de código complejo. Los sonidos profundos y constantes bloquean distracciones mientras mantienen el cerebro activo para tareas técnicas desafiantes.",
+    "metadata": {
+      "genero": "ambient oscuro, drone, techno suave",
+      "actividad": ["programación avanzada", "trabajo técnico complejo"],
+      "mood": ["enfocado", "inmersivo", "técnico"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["oscuro", "inmersivo", "técnico", "complejo"]
+    }
+  },
+  {
+    "id": "kb_077",
+    "text": "La música constante para trabajo de madrugada mantiene la alerta sin sobreestimular. Los sonidos continuos y uniformes ayudan a mantener el estado de alerta durante horas tempranas, facilitando la productividad en momentos donde el cuerpo busca descanso.",
+    "metadata": {
+      "genero": "música constante, ambient continuo",
+      "actividad": ["trabajo madrugada", "horas tempranas"],
+      "mood": ["alertado", "persistente", "enfocado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["noche", "madrugada"],
+      "tags": ["constante", "madrugada", "alerta", "persistente"]
+    }
+  },
+  {
+    "id": "kb_078",
+    "text": "El rock clásico para amantes de guitarras y nostalgia proporciona energía con carácter histórico. Las guitarras icónicas y los solos memorables activan la nostalgia positiva mientras mantienen un nivel de energía que motiva y energiza.",
+    "metadata": {
+      "genero": "rock clásico, classic rock",
+      "actividad": ["nostalgia", "energía", "disfrute"],
+      "mood": ["energético", "nostálgico", "motivado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["rock", "clásico", "nostálgico", "energético"]
+    }
+  },
+  {
+    "id": "kb_079",
+    "text": "El rock moderno con energía potente y riffs intensos proporciona la fuerza necesaria para actividades que requieren determinación. Los riffs potentes y los ritmos agresivos aumentan la confianza y la energía, ideal para momentos que requieren acción decidida.",
+    "metadata": {
+      "genero": "rock moderno, hard rock",
+      "actividad": ["energía", "determinación", "acción"],
+      "mood": ["energético", "determinado", "poderoso"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["moderno", "potente", "riffs", "determinado"]
+    }
+  },
+  {
+    "id": "kb_080",
+    "text": "El rock alternativo para escuchas introspectivas combina energía con profundidad emocional. Las letras poéticas y los arreglos complejos facilitan la introspección mientras mantienen un nivel de energía que activa el pensamiento profundo y la reflexión.",
+    "metadata": {
+      "genero": "rock alternativo, alternative rock",
+      "actividad": ["introspección", "reflexión", "pensamiento profundo"],
+      "mood": ["introspectivo", "reflexivo", "profundo"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["alternativo", "introspectivo", "profundo", "reflexivo"]
+    }
+  },
+  {
+    "id": "kb_081",
+    "text": "El heavy metal agresivo para máxima potencia sonora proporciona energía extrema para momentos que requieren intensidad total. Los riffs pesados y los ritmos agresivos activan sistemas de respuesta de lucha, ideal para liberar energía acumulada o entrenamientos extremos.",
+    "metadata": {
+      "genero": "heavy metal, metal extremo",
+      "actividad": ["entrenamiento extremo", "liberación de energía", "intensidad"],
+      "mood": ["agresivo", "intenso", "poderoso"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["metal", "agresivo", "extremo", "potencia"]
+    }
+  },
+  {
+    "id": "kb_082",
+    "text": "El metal extremo para entrenamientos intensos sincroniza con el ritmo cardíaco elevado durante ejercicios de alta intensidad. Los ritmos rápidos y la energía constante mantienen la motivación y el rendimiento durante entrenamientos que requieren máxima resistencia.",
+    "metadata": {
+      "genero": "metal extremo, death metal, thrash metal",
+      "actividad": ["entrenamiento intenso", "alta intensidad", "resistencia"],
+      "mood": ["intenso", "determinado", "resistente"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["extremo", "intenso", "resistencia", "determinado"]
+    }
+  },
+  {
+    "id": "kb_083",
+    "text": "El metal oscuro para ambientes intensos y dramáticos crea una atmósfera de poder y determinación. Los sonidos profundos y las texturas complejas generan un ambiente de intensidad controlada, ideal para momentos que requieren enfoque absoluto y determinación.",
+    "metadata": {
+      "genero": "metal oscuro, doom metal, black metal",
+      "actividad": ["intensidad", "determinación", "enfoque absoluto"],
+      "mood": ["intenso", "dramático", "determinado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["oscuro", "dramático", "intenso", "determinado"]
+    }
+  },
+  {
+    "id": "kb_084",
+    "text": "El trap moderno con bajos profundos y ritmo urbano proporciona energía con carácter contemporáneo. Los beats potentes y los ritmos sincopados activan la energía mientras mantienen un ambiente moderno y urbano, ideal para actividades que requieren energía con estilo.",
+    "metadata": {
+      "genero": "trap moderno, trap urbano",
+      "actividad": ["energía", "social", "actividades urbanas"],
+      "mood": ["energético", "moderno", "urbano"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["trap", "moderno", "urbano", "energético"]
+    }
+  },
+  {
+    "id": "kb_085",
+    "text": "El trap relajado para mood nocturno combina elementos del trap con ambientes suaves. Los beats sutiles y los ritmos pausados crean un ambiente nocturno relajado, perfecto para momentos de relajación donde se busca un toque moderno sin energía excesiva.",
+    "metadata": {
+      "genero": "trap relajado, chill trap",
+      "actividad": ["relajación nocturna", "mood tranquilo"],
+      "mood": ["relajado", "tranquilo", "moderno"],
+      "condiciones_ambientales": ["noche"],
+      "tiempo_dia": ["noche"],
+      "tags": ["trap", "relajado", "nocturno", "chill"]
+    }
+  },
+  {
+    "id": "kb_086",
+    "text": "El trap bailable para fiestas urbanas mantiene un ritmo constante que invita al movimiento. Los beats potentes y los drops crean momentos de energía que mantienen el ambiente festivo, ideal para fiestas donde se busca música moderna y energética.",
+    "metadata": {
+      "genero": "trap bailable, trap party",
+      "actividad": ["fiesta", "baile", "social"],
+      "mood": ["energético", "festivo", "sociable"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["noche"],
+      "tags": ["trap", "bailable", "festivo", "energético"]
+    }
+  },
+  {
+    "id": "kb_087",
+    "text": "El rap clásico con letras icónicas proporciona energía con contenido significativo. Las letras memorables y los beats característicos activan la energía mientras facilitan la conexión con mensajes poderosos, ideal para momentos que requieren motivación con sustancia.",
+    "metadata": {
+      "genero": "rap clásico, old school rap",
+      "actividad": ["motivación", "energía", "reflexión"],
+      "mood": ["energético", "motivado", "reflexivo"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["rap", "clásico", "icónico", "motivacional"]
+    }
+  },
+  {
+    "id": "kb_088",
+    "text": "El rap actual con beats potentes proporciona energía contemporánea con ritmos modernos. Los beats actuales y los flujos modernos activan la energía mientras mantienen un carácter contemporáneo, ideal para actividades que requieren energía con estilo actual.",
+    "metadata": {
+      "genero": "rap actual, modern rap, hip-hop moderno",
+      "actividad": ["energía", "motivación", "actividades modernas"],
+      "mood": ["energético", "moderno", "motivado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["rap", "actual", "moderno", "energético"]
+    }
+  },
+  {
+    "id": "kb_089",
+    "text": "El rap instrumental para improvisación proporciona ritmos sin letras que facilitan la creatividad. Los beats constantes y los ritmos variados crean un ambiente donde la mente puede fluir libremente, ideal para actividades creativas o momentos de expresión libre.",
+    "metadata": {
+      "genero": "rap instrumental, beats, instrumental hip-hop",
+      "actividad": ["improvisación", "creatividad", "expresión libre"],
+      "mood": ["creativo", "fluido", "libre"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["instrumental", "beats", "creativo", "libre"]
+    }
+  },
+  {
+    "id": "kb_090",
+    "text": "La mezcla de trap, rap y hip hop moderno crea un ambiente urbano energético. Esta combinación proporciona variedad rítmica mientras mantiene un carácter contemporáneo, ideal para actividades que requieren energía con diversidad sonora.",
+    "metadata": {
+      "genero": "trap, rap, hip-hop moderno, urbano",
+      "actividad": ["energía", "social", "actividades urbanas"],
+      "mood": ["energético", "moderno", "urbano"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["urbano", "moderno", "variado", "energético"]
+    }
+  },
+  {
+    "id": "kb_091",
+    "text": "El drill intenso con atmósfera oscura proporciona energía con carácter agresivo. Los ritmos duros y los ambientes oscuros activan sistemas de respuesta intensa, ideal para momentos que requieren determinación extrema o liberación de energía acumulada.",
+    "metadata": {
+      "genero": "drill, drill intenso",
+      "actividad": ["intensidad", "determinación", "energía extrema"],
+      "mood": ["agresivo", "intenso", "determinado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["drill", "intenso", "oscuro", "agresivo"]
+    }
+  },
+  {
+    "id": "kb_092",
+    "text": "El hip hop old school con estilo boom bap proporciona energía con carácter nostálgico. Los beats característicos y los ritmos clásicos activan la nostalgia positiva mientras mantienen un nivel de energía que motiva y energiza con un toque histórico.",
+    "metadata": {
+      "genero": "hip-hop old school, boom bap",
+      "actividad": ["nostalgia", "energía", "disfrute"],
+      "mood": ["energético", "nostálgico", "motivado"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde", "noche"],
+      "tags": ["old school", "boom bap", "nostálgico", "energético"]
+    }
+  },
+  {
+    "id": "kb_093",
+    "text": "El indie rock suave para tardes relajadas combina energía moderada con ambientes contemplativos. Las guitarras suaves y las melodías relajadas crean un ambiente de calma con un toque de energía, ideal para tardes donde se busca relajación sin adormecimiento.",
+    "metadata": {
+      "genero": "indie rock, rock suave",
+      "actividad": ["relajación", "tarde tranquila"],
+      "mood": ["relajado", "contemplativo", "tranquilo"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["tarde"],
+      "tags": ["indie rock", "suave", "relajado", "contemplativo"]
+    }
+  },
+  {
+    "id": "kb_094",
+    "text": "El pop rock energético para manejar proporciona energía constante sin sobreestimular. Los ritmos constantes y las melodías pegadizas mantienen la alerta durante la conducción mientras crean un ambiente energético que facilita viajes largos sin fatiga.",
+    "metadata": {
+      "genero": "pop rock, rock energético",
+      "actividad": ["conducir", "viaje", "energía constante"],
+      "mood": ["energético", "alertado", "disfrutando"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["cualquiera"],
+      "tags": ["pop rock", "energético", "conducción", "constante"]
+    }
+  },
+  {
+    "id": "kb_095",
+    "text": "Los hits latinos bailables y actuales mantienen un ritmo constante que invita al movimiento. Los ritmos latinos modernos y los beats actuales crean un ambiente festivo contemporáneo, ideal para fiestas donde se busca música latina con energía actual.",
+    "metadata": {
+      "genero": "hits latinos, latino actual, reggaetón actual",
+      "actividad": ["fiesta", "baile", "social"],
+      "mood": ["energético", "festivo", "sociable"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["noche"],
+      "tags": ["latino", "actual", "bailable", "festivo"]
+    }
+  },
+  {
+    "id": "kb_096",
+    "text": "El reggaetón clásico para nostalgia fiestera transporta a épocas pasadas con energía positiva. Los ritmos característicos y los sonidos clásicos activan recuerdos festivos mientras mantienen un ambiente de celebración, ideal para momentos de nostalgia con energía.",
+    "metadata": {
+      "genero": "reggaetón clásico, reggaetón retro",
+      "actividad": ["nostalgia", "fiesta", "celebración"],
+      "mood": ["nostálgico", "energético", "festivo"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["noche"],
+      "tags": ["reggaetón", "clásico", "nostálgico", "festivo"]
+    }
+  },
+  {
+    "id": "kb_097",
+    "text": "El hardstyle electrónico para máxima intensidad proporciona energía extrema con ritmos constantes. Los beats rápidos y los ritmos sincopados activan sistemas de respuesta intensa, ideal para entrenamientos extremos o momentos que requieren máxima energía sostenida.",
+    "metadata": {
+      "genero": "hardstyle, electrónica intensa",
+      "actividad": ["entrenamiento extremo", "máxima intensidad", "energía extrema"],
+      "mood": ["intenso", "energético", "extremo"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["hardstyle", "intenso", "extremo", "energético"]
+    }
+  },
+  {
+    "id": "kb_098",
+    "text": "El dubstep con drops agresivos proporciona momentos de intensidad extrema intercalados con builds. Los drops potentes y los ritmos complejos crean momentos de liberación de energía, ideal para entrenamientos de alta intensidad o momentos que requieren explosiones de energía.",
+    "metadata": {
+      "genero": "dubstep, brostep",
+      "actividad": ["entrenamiento intenso", "explosiones de energía", "alta intensidad"],
+      "mood": ["intenso", "agresivo", "explosivo"],
+      "condiciones_ambientales": ["cualquiera"],
+      "tiempo_dia": ["mañana", "tarde"],
+      "tags": ["dubstep", "drops", "agresivo", "explosivo"]
+    }
   }
 ]
 
