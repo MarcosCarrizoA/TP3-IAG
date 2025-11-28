@@ -26,7 +26,7 @@ def create_context_analyzer_agent():
     )
     
     # El agente especializado solo necesita las herramientas de contexto ambiental
-    from music_agent import get_location_and_weather, get_time_context
+    from tools.environmental import get_location_and_weather, get_time_context
     
     tools = [
         get_location_and_weather,
@@ -34,7 +34,7 @@ def create_context_analyzer_agent():
     ]
     
     # Leer el prompt del sistema especializado
-    with open('system_prompt_context_analyzer.txt', 'r', encoding='utf-8') as f:
+    with open('prompts/system_prompt_context_analyzer.txt', 'r', encoding='utf-8') as f:
         system_prompt = f.read()
     
     # create_agent no acepta system_message directamente, se pasará en el invoke
