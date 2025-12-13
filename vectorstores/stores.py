@@ -13,6 +13,18 @@ memory_vectorstore: Optional[Chroma] = None
 knowledge_vectorstore: Optional[Chroma] = None
 
 
+def _ensure_dir(path: str) -> None:
+    os.makedirs(path, exist_ok=True)
+
+
+def _memory_dir() -> str:
+    return os.getenv("CHROMA_MEMORY_DIR", "./chroma_memory")
+
+
+def _knowledge_dir() -> str:
+    return os.getenv("CHROMA_KNOWLEDGE_DIR", "./chroma_knowledge")
+
+
 def initialize_memory_vectorstore() -> Chroma:
     """
     Inicializa el vector store de memoria con ChromaDB.
@@ -23,7 +35,8 @@ def initialize_memory_vectorstore() -> Chroma:
     if memory_vectorstore is not None:
         return memory_vectorstore
     
-    persist_directory = "./chroma_memory"
+    persist_directory = _memory_dir()
+    _ensure_dir(persist_directory)
     
     # Intentar cargar vector store existente
     if os.path.exists(persist_directory) and os.listdir(persist_directory):
@@ -53,7 +66,8 @@ def initialize_knowledge_vectorstore() -> Chroma:
     if knowledge_vectorstore is not None:
         return knowledge_vectorstore
     
-    persist_directory = "./chroma_knowledge"
+    persist_directory = _knowledge_dir()
+    _ensure_dir(persist_directory)
     
     # Intentar cargar vector store existente
     if os.path.exists(persist_directory) and os.listdir(persist_directory):

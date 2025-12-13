@@ -23,6 +23,15 @@ def save_context(context: str) -> str:
                 'timestamp': timestamp,
                 'id': f"context_{timestamp}"
             }
+
+            # If running under the API, associate saved context to the authenticated user.
+            try:
+                from api.user_context import get_current_user_id  # type: ignore
+                user_id = get_current_user_id()
+                if user_id is not None:
+                    metadata["user_id"] = int(user_id)
+            except Exception:
+                pass
             
             if 'Playlist:' in context:
                 metadata['playlist_recommended'] = context.split('Playlist:')[-1].strip()
@@ -92,13 +101,23 @@ def get_similar_contexts(query: str, top_k: int = 5) -> str:
     """
     try:
         vectorstore = initialize_memory_vectorstore()
+
+        # If running under the API, restrict results to the authenticated user.
+        try:
+            from api.user_context import get_current_user_id  # type: ignore
+            user_id = get_current_user_id()
+        except Exception:
+            user_id = None
         
         # Si no hay query, usar búsqueda genérica para obtener últimos contextos
         if not query or query.strip() == "":
             query = "contexto previo"
         
         # Búsqueda semántica
-        results = vectorstore.similarity_search_with_score(query, k=top_k)
+        kwargs = {}
+        if user_id is not None:
+            kwargs["filter"] = {"user_id": int(user_id)}
+        results = vectorstore.similarity_search_with_score(query, k=top_k, **kwargs)
         
         if not results:
             return "No hay contextos previos almacenados"
