@@ -19,10 +19,15 @@ def create_context_analyzer_agent():
     if not api_key:
         raise ValueError("GOOGLE_API_KEY no encontrada en las variables de entorno")
     
+    # Allow overriding model/temperature from env. If GEMINI_CONTEXT_MODEL is unset,
+    # fallback to GEMINI_MODEL used by the main agent.
+    gemini_model = os.getenv("GEMINI_CONTEXT_MODEL", os.getenv("GEMINI_MODEL", "gemini-2.0-flash"))
+    temperature = float(os.getenv("GEMINI_CONTEXT_TEMPERATURE", os.getenv("GEMINI_TEMPERATURE", "0.7")))
+
     model = ChatGoogleGenerativeAI(
-        model="gemini-2.0-flash",
-        temperature=0.7,
-        google_api_key=api_key
+        model=gemini_model,
+        temperature=temperature,
+        google_api_key=api_key,
     )
     
     # El agente especializado solo necesita las herramientas de contexto ambiental

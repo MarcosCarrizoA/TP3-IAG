@@ -9,6 +9,30 @@ from sqlalchemy.orm import Session
 from db.models import Playlist
 
 
+DEFAULT_PLAYLISTS: list[tuple[str, str]] = [
+    (
+        "Focus Flow",
+        "Música instrumental y lo-fi para concentración, estudio y trabajo profundo.",
+    ),
+    (
+        "Gym Boost",
+        "Beats energéticos para entrenar: motivación, cardio y fuerza.",
+    ),
+    (
+        "Chill Night",
+        "Sonidos relajados para cerrar el día: chill, downtempo y vibes suaves.",
+    ),
+    (
+        "Road Trip",
+        "Temas para manejar y viajar: pop/indie y clásicos que levantan el ánimo.",
+    ),
+    (
+        "Rainy Mood",
+        "Playlist introspectiva para días de lluvia: acústico, ambient y soft indie.",
+    ),
+]
+
+
 def list_playlists_for_user(db: Session, user_id: int) -> list[Playlist]:
     stmt = select(Playlist).where(Playlist.user_id == user_id).order_by(Playlist.name.asc())
     return list(db.execute(stmt).scalars().all())
@@ -58,5 +82,14 @@ def delete_playlist_for_user(db: Session, user_id: int, playlist_id: int) -> boo
     db.delete(p)
     db.commit()
     return True
+
+
+def seed_default_playlists_for_user(db: Session, user_id: int) -> None:
+    """Create a starter set of playlists for a new user (idempotent-ish)."""
+    existing = {p.name for p in list_playlists_for_user(db, user_id=user_id)}
+    for name, description in DEFAULT_PLAYLISTS:
+        if name in existing:
+            continue
+        create_playlist_for_user(db, user_id=user_id, name=name, description=description)
 
 

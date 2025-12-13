@@ -8,6 +8,7 @@ from api.deps import get_db
 from auth.jwt import create_access_token
 from auth.passwords import hash_password, verify_password
 from db.models import User
+from db.repositories.playlists import seed_default_playlists_for_user
 
 
 router = APIRouter()
@@ -38,6 +39,9 @@ def signup(payload: SignupRequest, db: Session = Depends(get_db)):
     db.add(user)
     db.commit()
     db.refresh(user)
+
+    # Starter playlists for new users
+    seed_default_playlists_for_user(db, user_id=user.id)
 
     token = create_access_token(user_id=user.id, username=user.username)
     return TokenResponse(access_token=token)

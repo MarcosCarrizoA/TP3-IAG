@@ -18,11 +18,27 @@ chroma_memory/
 /chroma_knowledge/
 /chroma_memory/
 
+# Local SQLite DB (dev only)
+app.db
+*.sqlite3
+
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+
+# Frontend (Vite/React)
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+frontend/.vite/
+frontend/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # OS
 .DS_Store

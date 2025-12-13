@@ -15,6 +15,21 @@ pip install -r requirements.txt
   - Copiá `env.example` a `.env` y completá valores (o seteá variables en tu shell).
   - Mínimo requerido: `GOOGLE_API_KEY` y `JWT_SECRET`.
 
+- Ejemplo `.env` (backend):
+
+```env
+GOOGLE_API_KEY=TU_KEY
+JWT_SECRET=un_secreto_largo
+DATABASE_URL=sqlite:///./app.db
+CHROMA_MEMORY_DIR=./chroma_memory
+CHROMA_KNOWLEDGE_DIR=./chroma_knowledge
+CORS_ORIGINS=http://localhost:5173
+GEMINI_MODEL=gemini-2.0-flash
+GEMINI_TEMPERATURE=0.7
+GEMINI_CONTEXT_MODEL=gemini-2.0-flash
+GEMINI_CONTEXT_TEMPERATURE=0.7
+```
+
 - Levantar API:
 
 ```bash
@@ -24,13 +39,34 @@ uvicorn api.app:app --host 0.0.0.0 --port 8000
 - Abrí la UI de prueba:
   - `/docs`
 
+### UI de chat (React) para probar en local
+
+Hay un frontend mínimo en `frontend/` (Vite + React).
+
+- Crear `frontend/.env` (frontend):
+
+```env
+VITE_API_BASE_URL=http://localhost:8000
+```
+
+- Instalar y correr:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Luego abrís la URL que te muestre Vite (por defecto `http://localhost:5173`).
+
+Tip: en el chat escribí `help` para ver comandos rápidos (`help`, `playlists`, `memory`).
+
 ### Flujo de uso (vía `/docs`)
 
 1. `POST /auth/signup` (o `POST /auth/login`) → devuelve `access_token`.
 2. En `/docs`, botón **Authorize** → pegás `Bearer <token>`.
 3. `POST /chat` → chateás con el agente (queda asociado a tu usuario).
-4. `GET /history` → ves tu historial.
-5. `GET/POST/PUT/DELETE /playlists` → playlists persistentes por usuario.
+4. `GET/POST/PUT/DELETE /playlists` → playlists persistentes por usuario (también podés gestionarlas por chat).
 
 ### RAG / Chroma
 

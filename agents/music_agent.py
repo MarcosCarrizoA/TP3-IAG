@@ -36,10 +36,14 @@ def create_music_agent():
     initialize_memory_vectorstore()
     initialize_knowledge_vectorstore()
     
+    # Allow overriding model/temperature from env for easier local testing and quota workarounds.
+    gemini_model = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
+    temperature = float(os.getenv("GEMINI_TEMPERATURE", "0.7"))
+
     model = ChatGoogleGenerativeAI(
-        model="gemini-2.0-flash",
-        temperature=0.7,
-        google_api_key=api_key
+        model=gemini_model,
+        temperature=temperature,
+        google_api_key=api_key,
     )
     
     tools = [
