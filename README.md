@@ -28,6 +28,11 @@ GEMINI_MODEL=gemini-2.0-flash
 GEMINI_TEMPERATURE=0.7
 GEMINI_CONTEXT_MODEL=gemini-2.0-flash
 GEMINI_CONTEXT_TEMPERATURE=0.7
+EMBEDDINGS_PROVIDER=fastembed
+FASTEMBED_MODEL=BAAI/bge-small-en-v1.5
+# (opcional) si querés embeddings por Google en vez de local:
+# EMBEDDINGS_PROVIDER=google
+# GEMINI_EMBEDDINGS_MODEL=text-embedding-004
 ```
 
 - Levantar API:

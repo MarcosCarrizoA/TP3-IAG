@@ -4,6 +4,10 @@ from langchain_core.messages import SystemMessage, HumanMessage
 
 from agents import create_music_agent
 
+# Expose the FastAPI app for deployment platforms that default to `uvicorn main:app` (e.g. Railway).
+# This does not affect CLI usage (the interactive loop only runs under `__main__`).
+from api.app import app  # noqa: F401
+
 
 def main():
     try:
