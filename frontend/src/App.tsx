@@ -4,6 +4,7 @@ import {
   listPlaylists,
   login,
   signup,
+  type ChatExpense,
   type PlaylistItem,
 } from "./api";
 
@@ -25,10 +26,19 @@ export default function App() {
   const [error, setError] = useState<string | null>(null);
 
   const [playlists, setPlaylists] = useState<PlaylistItem[]>([]);
+  const [lastExpense, setLastExpense] = useState<ChatExpense | null>(null);
 
   const isAuthed = useMemo(() => Boolean(token), [token]);
   const roleLabel = (role: "user" | "assistant" | "typing") =>
     role === "user" ? username || "Usuario" : "MusicBot";
+
+  const agentLabel = (agent?: string) => {
+    const a = (agent || "").trim();
+    if (!a) return "Agente";
+    if (a === "main_agent") return "Agente Principal (MusicBot)";
+    if (a === "context_agent") return "Subagente de contexto";
+    return a;
+  };
 
   useEffect(() => {
     if (!token) return;
@@ -64,6 +74,7 @@ export default function App() {
     setToken(null);
     setMessages([]);
     setPlaylists([]);
+    setLastExpense(null);
   }
 
   async function send() {
@@ -78,6 +89,7 @@ export default function App() {
     try {
       const res = await chat(text, token);
       setMessages((m) => [...m, { role: "assistant", content: res.reply }]);
+      setLastExpense(res.expense || null);
       setPlaylists(await listPlaylists(token));
     } catch (e: any) {
       setError(e?.message || String(e));
@@ -121,9 +133,6 @@ export default function App() {
           </button>
 
           {error ? <pre className="error">{error}</pre> : null}
-          <p className="muted small">
-            API base: <code>{(import.meta as any).env?.VITE_API_BASE_URL || "http://localhost:8000"}</code>
-          </p>
         </div>
       </div>
     );
@@ -191,6 +200,39 @@ export default function App() {
                 <div className="muted small">{p.description}</div>
               </div>
             ))}
+          </div>
+
+          <h2>Gasto de la última consulta</h2>
+          <div className="list">
+            {!lastExpense ? (
+              <div className="muted">Todavía no hay datos de gasto.</div>
+            ) : (
+              <>
+                {lastExpense.total ? (
+                  <div className="item">
+                    <div className="itemTitle">Total</div>
+                    <div className="muted small">
+                      input {lastExpense.total.input_tokens ?? "-"} · output {lastExpense.total.output_tokens ?? "-"} · total{" "}
+                      {lastExpense.total.total_tokens ?? "-"}
+                    </div>
+                  </div>
+                ) : null}
+
+                {lastExpense.breakdown?.length ? (
+                  lastExpense.breakdown.map((b, i) => (
+                    <div key={i} className="item">
+                      <div className="itemTitle">{agentLabel(b.agent)}</div>
+                      <div className="muted small">
+                        input {b.input_tokens ?? "-"} · output {b.output_tokens ?? "-"} · total {b.total_tokens ?? "-"}
+                        {b.model ? ` · ${b.model}` : ""}
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <div className="muted">Sin breakdown disponible.</div>
+                )}
+              </>
+            )}
           </div>
         </div>
       </div>

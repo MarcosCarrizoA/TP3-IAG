@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import create_agent
 from langchain_core.messages import SystemMessage
+from typing import Any, Optional, Dict
 
 load_dotenv()
 
@@ -53,7 +54,7 @@ def create_context_analyzer_agent():
     
     return agent
 
-def analyze_context(user_query: str = "") -> str:
+def analyze_context(user_query: str = "", callbacks=None) -> str:
     """
     Analiza el contexto ambiental y genera insights.
     
@@ -75,7 +76,18 @@ Analiza el contexto ambiental actual y genera insights profundos sobre cómo inf
 Genera insights específicos sobre cómo el clima, hora del día y ubicación se relacionan con el estado de ánimo esperado y el tipo de música apropiada.
 """
 
+    # Label this LLM call as context_agent for global usage accounting
+    try:
+        from api.callback_context import set_agent_label, reset_agent_label  # type: ignore
+
+        label_token = set_agent_label("context_agent")
+    except Exception:
+        label_token = None
+        reset_agent_label = None
+
     config = {"configurable": {"thread_id": "context_analysis"}}
+    if callbacks is not None:
+        config["callbacks"] = callbacks
 
     # Incluir system message en los mensajes
     from langchain_core.messages import HumanMessage
@@ -84,10 +96,17 @@ Genera insights específicos sobre cómo el clima, hora del día y ubicación se
         HumanMessage(content=prompt)
     ]
 
-    response = agent.invoke(
-        {"messages": messages},
-        config
-    )
+    try:
+        response = agent.invoke(
+            {"messages": messages},
+            config
+        )
+    finally:
+        if label_token is not None and reset_agent_label is not None:
+            try:
+                reset_agent_label(label_token)
+            except Exception:
+                pass
     
     if "messages" in response and response["messages"]:
         last_message = response["messages"][-1]

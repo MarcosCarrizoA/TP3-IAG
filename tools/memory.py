@@ -147,7 +147,15 @@ def get_context_insights(user_query: str = "") -> str:
     """
     try:
         from agents.context_analyzer_agent import analyze_context
-        return analyze_context(user_query)
+        # Pass global callbacks (if any) so token usage is captured across sub-agent calls.
+        try:
+            from api.callback_context import get_callbacks  # type: ignore
+
+            callbacks = get_callbacks()
+        except Exception:
+            callbacks = None
+
+        return analyze_context(user_query, callbacks=callbacks)
     except Exception as e:
         print(f"⚠️ Error obteniendo insights del agente especializado: {str(e)}")
         return "Insights de contexto no disponibles"
