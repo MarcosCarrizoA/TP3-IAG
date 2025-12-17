@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field
 from langchain_core.messages import SystemMessage, HumanMessage
@@ -25,6 +26,81 @@ class ChatRequest(BaseModel):
 class ChatResponse(BaseModel):
     reply: str
     expense: Optional[dict[str, Any]] = None
+
+
+_GREET_RE = re.compile(r"[^a-záéíóúüñ0-9\s]", re.IGNORECASE)
+
+
+def _normalize_user_text(s: str) -> str:
+    s = (s or "").strip().lower()
+    s = _GREET_RE.sub(" ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+
+def _is_pure_greeting(cmd: str) -> bool:
+    """
+    Fast, conservative greeting detector to avoid spending tokens on "hola/buenas".
+    Only triggers when the message is basically a greeting/smalltalk and does NOT
+    contain music/recommendation intent.
+    """
+    t = _normalize_user_text(cmd)
+    if not t:
+        return False
+
+    # If there's any music/recommendation intent, do NOT treat as greeting.
+    intent_markers = (
+        "recomenda",
+        "recomendame",
+        "playlist",
+        "música",
+        "musica",
+        "tema",
+        "cancion",
+        "canción",
+        "escuchar",
+    )
+    if any(m in t for m in intent_markers):
+        return False
+
+    # Also treat context/activity/mood as implicit recommendation intent.
+    implicit_markers = (
+        "ansioso",
+        "triste",
+        "estresado",
+        "cansado",
+        "nostalgico",
+        "estudiando",
+        "trabajando",
+        "gimnasio",
+        "entrenando",
+        "manejando",
+        "cocinando",
+        "asando",
+    )
+    if any(m in t for m in implicit_markers):
+        return False
+
+    greetings = {
+        "hola",
+        "holaa",
+        "holaaa",
+        "buenas",
+        "buen dia",
+        "buen día",
+        "buenas tardes",
+        "buenas noches",
+        "hey",
+        "hello",
+        "que tal",
+        "qué tal",
+        "como estas",
+        "cómo estás",
+        "como andas",
+        "cómo andás",
+    }
+    # Keep it strict to avoid misrouting.
+    return t in greetings
 
 
 def _group_usage_breakdown(entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -189,6 +265,11 @@ def chat(
             return ChatResponse(reply=list_playlists(), expense=None)
         if cmd_l in ("memory", "memoria"):
             return ChatResponse(reply=get_similar_contexts("", top_k=10), expense=None)
+        if _is_pure_greeting(cmd):
+            return ChatResponse(
+                reply="¡Hola! Soy MusicBot, tu asistente de música. Decime tu mood o qué estás haciendo y te recomiendo algo para escuchar.",
+                expense=None,
+            )
 
         # Retrieve compact per-user memory (Chroma) and inject it into the prompt.
         memory = get_similar_contexts(payload.message, top_k=3)

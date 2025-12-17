@@ -17,6 +17,19 @@ def _ensure_dir(path: str) -> None:
     os.makedirs(path, exist_ok=True)
 
 
+def reset_vectorstores(*, reset_memory: bool = True, reset_knowledge: bool = False) -> None:
+    """
+    Reset cached global vectorstore instances.
+
+    Useful for benchmarks/tests that want to switch persistence directories on the fly.
+    """
+    global memory_vectorstore, knowledge_vectorstore
+    if reset_memory:
+        memory_vectorstore = None
+    if reset_knowledge:
+        knowledge_vectorstore = None
+
+
 def _memory_dir() -> str:
     return os.getenv("CHROMA_MEMORY_DIR", "./chroma_memory")
 

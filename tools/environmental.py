@@ -9,6 +9,22 @@ def get_location_and_weather() -> str:
     Obtiene la ubicación real del usuario (ciudad y país) y el clima actual usando las coordenadas exactas.
     Utiliza la API ipwho.is para ubicación y open-meteo.com para clima.
     """
+    # Benchmark mode: deterministic per-case mocks (no external calls)
+    try:
+        from bench.mock_context import get_api_mocks  # type: ignore
+
+        m = get_api_mocks()
+        if m is not None:
+            if not m.location and not m.weather and m.temperature_c is None:
+                return "Ubicación: No disponible | Clima: No disponible"
+            loc = m.location or "Ubicación desconocida"
+            w = m.weather or "clima desconocido"
+            if m.temperature_c is None:
+                return f"Ubicación: {loc} | Clima: {w}"
+            return f"Ubicación: {loc} | Clima: {w}, {m.temperature_c}°C"
+    except Exception:
+        pass
+
     try:
         response = requests.get("https://ipwho.is/", timeout=10)
         data = response.json()
@@ -54,6 +70,23 @@ def get_time_context() -> str:
     Obtiene el día de la semana, la hora actual y el momento del día (mañana/tarde/noche).
     Este contexto temporal se combina con el estado de ánimo para ajustar la selección musical.
     """
+    # Benchmark mode: deterministic per-case mocks (no datetime dependency)
+    try:
+        from bench.mock_context import get_api_mocks  # type: ignore
+
+        m = get_api_mocks()
+        if m is not None:
+            if not m.time and not m.season:
+                return "Tiempo: No disponible"
+            parts = []
+            if m.time:
+                parts.append(str(m.time))
+            if m.season:
+                parts.append(f"season={m.season}")
+            return " | ".join(parts)
+    except Exception:
+        pass
+
     now = datetime.now()
     day_of_week = now.strftime("%A")
     hour = now.hour
